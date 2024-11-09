@@ -27,7 +27,7 @@ $apiKey = get_option('chatina_api_key');
         <?php esc_html_e('You are connected to Chatina', 'chatina') ?>
         </p>
     <?php endif; ?>
-    <a href="https://app.chatina.ai/connect/?callback=<?php echo urlencode(admin_url('admin.php?page=chatina&_wpnonce=' . wp_create_nonce('chatina_save_api_key'))) ?>" class="chatina__connect" target="_blank">
+    <a href="http://localhost:3000/connect/?callback=<?php echo urlencode(admin_url('admin.php?page=chatina&_wpnonce=' . wp_create_nonce('chatina_save_api_key'))) ?>" class="chatina__connect" target="_blank">
         <img src="<?php echo esc_url(plugins_url('assets/logo-white.svg', CHATINA_PLUGIN_FILE)) ?>" alt="<?php esc_attr_e('Chatina Logo', 'chatina') ?>" class="chatina__connect-logo" width="20" height="20">
         <?php esc_html_e('Connect Chatina', 'chatina') ?>
     </a>

@@ -1,4 +1,4 @@
-=== Chatina AI - Live Chat for WordPress ===
+=== Chatina Ai – Live Chat Online Platform ===
 Contributors: ertano, mihanwp, chatinaai
 Tags: live chat, chat, AI chat, customer support
 Requires at least: 5.0

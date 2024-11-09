@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Chatina AI – Live Chat for WordPress
+ * Plugin Name: Chatina Ai – Live Chat Online Platform
  * Plugin URI: https://chatina.ai/lab/wordpress/
  * Description: Add online chat to your website
  * Version: 1.0
