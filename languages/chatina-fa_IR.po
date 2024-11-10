@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Chatina\n"
-"POT-Creation-Date: 2024-11-08 14:21+0330\n"
-"PO-Revision-Date: 2024-11-08 14:21+0330\n"
+"POT-Creation-Date: 2024-11-10 14:26+0330\n"
+"PO-Revision-Date: 2024-11-10 14:27+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -21,27 +21,57 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#. Plugin Name of the plugin/theme
 #. Author of the plugin/theme
 #: chatina.php:36
 msgid "Chatina"
 msgstr "چتینا"
 
-#: views/setting.php:20
+#: views/setting.php:29
+msgid "Logo"
+msgstr "لوگو"
+
+#: views/setting.php:32
+msgid "Welcome to Chatina"
+msgstr "به چتینا خوش آمدید"
+
+#: views/setting.php:40
+msgid "General"
+msgstr "اصلی"
+
+#: views/setting.php:50
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: views/setting.php:51
+msgid "Connect to Chatina."
+msgstr "به چتینا متصل شده اید."
+
+#: views/setting.php:56
 msgid "You are connected to Chatina"
 msgstr "شما به چتینا متصل شده اید"
 
-#: views/setting.php:25
+#: views/setting.php:60
+msgid "Chatina Logo"
+msgstr "لوگو چتینا"
+
+#: views/setting.php:61
 msgid "Connect Chatina"
 msgstr "اتصال مستقیم به چتینا"
 
+#. Plugin Name of the plugin/theme
+msgid "Chatina Ai – Live Chat Online Platform"
+msgstr "چتینا - پلتفرم گفتگوی آنلاین"
+
 #. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://chatina.ai"
+msgid "https://chatina.ai/lab/wordpress/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Chatina is a chatbot plugin for WordPress."
+msgid "Add online chat to your website"
+msgstr "افزودن گفتگو آنلاین به وبسایت شما."
+
+#. Author URI of the plugin/theme
+msgid "https://chatina.ai"
 msgstr ""
 
 #~ msgid "Settings saved successfully"

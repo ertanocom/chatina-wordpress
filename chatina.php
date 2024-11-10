@@ -17,9 +17,8 @@ namespace Chatina;
 
 if (!defined('ABSPATH')) exit;
 
-if (!defined('CHATINA_PLUGIN_FILE')) {
-    define('CHATINA_PLUGIN_FILE', __FILE__);
-}
+if (!defined('CHATINA_PLUGIN_FILE')) define('CHATINA_PLUGIN_FILE', __FILE__);
+if (!defined('CHATINA_PLUGIN_URL')) define('CHATINA_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 class Chatina
 {
@@ -46,7 +45,7 @@ class Chatina
     {
         $screen = get_current_screen();
         if ($screen->id === 'settings_page_chatina') {
-            wp_enqueue_style('chatina-admin', plugin_dir_url(__FILE__) . 'assets/chatina.css', [], '1.0.0');
+            wp_enqueue_style('chatina-admin', plugin_dir_url(__FILE__) . 'assets/css/chatina.css', [], '1.0.0');
         }
     }
 
