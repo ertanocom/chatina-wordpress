@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Chatina\n"
-"POT-Creation-Date: 2024-11-10 14:26+0330\n"
-"PO-Revision-Date: 2024-11-10 14:27+0330\n"
+"POT-Creation-Date: 2024-11-13 09:11+0330\n"
+"PO-Revision-Date: 2024-11-13 09:12+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fa_IR\n"
@@ -26,37 +26,45 @@ msgstr ""
 msgid "Chatina"
 msgstr "چتینا"
 
-#: views/setting.php:29
+#: views/setting.php:40
 msgid "Logo"
 msgstr "لوگو"
 
-#: views/setting.php:32
+#: views/setting.php:43
 msgid "Welcome to Chatina"
 msgstr "به چتینا خوش آمدید"
 
-#: views/setting.php:40
+#: views/setting.php:51
 msgid "General"
 msgstr "اصلی"
 
-#: views/setting.php:50
+#: views/setting.php:61
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: views/setting.php:51
-msgid "Connect to Chatina."
-msgstr "به چتینا متصل شده اید."
-
-#: views/setting.php:56
+#: views/setting.php:66
 msgid "You are connected to Chatina"
 msgstr "شما به چتینا متصل شده اید"
 
-#: views/setting.php:60
+#: views/setting.php:71
+msgid "To connect Chatina, click the button below."
+msgstr "جهت اتصال به چتینا روی دکمه زیر کلیک کنید."
+
+#: views/setting.php:74
 msgid "Chatina Logo"
 msgstr "لوگو چتینا"
 
-#: views/setting.php:61
+#: views/setting.php:75
 msgid "Connect Chatina"
 msgstr "اتصال مستقیم به چتینا"
+
+#: views/setting.php:79
+msgid "To disconnect Chatina, click the button below."
+msgstr "جهت قطع اتصال چتینا روی دکمه زیر کلیک کنید."
+
+#: views/setting.php:82
+msgid "Disconnect Chatina"
+msgstr "قطع اتصال چتینا"
 
 #. Plugin Name of the plugin/theme
 msgid "Chatina Ai – Live Chat Online Platform"
@@ -73,6 +81,9 @@ msgstr "افزودن گفتگو آنلاین به وبسایت شما."
 #. Author URI of the plugin/theme
 msgid "https://chatina.ai"
 msgstr ""
+
+#~ msgid "Connect to Chatina."
+#~ msgstr "به چتینا متصل شده اید."
 
 #~ msgid "Settings saved successfully"
 #~ msgstr "تنظیمات با موفقت ذخیره شد"

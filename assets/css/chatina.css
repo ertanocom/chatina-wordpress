@@ -3,12 +3,11 @@
 }
 
 .chatina__connect {
-    margin-top: 20px;
     display: block;
     background-color: #1c797d;
     color: #fff;
     border: unset;
-    padding: 10px 20px;
+    padding: 20px 40px;
     font-size: 17px;
     border-radius: 100px;
     cursor: pointer;
@@ -17,8 +16,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: max-content;
     margin-top: 45px;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
 .chatina__connect:hover {
@@ -37,14 +38,42 @@
 }
 
 .chatina .chatina__connected {
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 1em;
     text-align: center;
     color: #1C797D;
     display: block;
+    font-weight: 600;
+    display: block;
 }
 
-.mwtc_admin_settings_wrapper {
+.chatina__disconnect-text,
+.chatina__connect-text {
+    text-align: center;
+    margin-top: 3em;
+    display: block;
+    font-size: 18px;
+}
+
+.chatina__disconnect-link {
+    display: block;
+    color: #d61b1b;
+    border: 1px solid #d61b1b;
+    text-decoration: unset;
+    padding: 20px 40px;
+    border-radius: 20px;
+    transition-duration: .2s;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.chatina__disconnect-link:hover {
+    color: #fff;
+    background-color: #d61b1b;
+}
+
+.chatina.mwtc_admin_settings_wrapper {
     min-height: 100px;
     width: 95%;
     margin: 50px auto;
@@ -53,30 +82,30 @@
     display: flex;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper {
     width: 25%;
     margin: 0 0 0 20px;
 }
 
-.mwtc_admin_settings_wrapper.mwtc-ltr .mwtc_sidebar_wrapper {
+.chatina.mwtc_admin_settings_wrapper.mwtc-ltr .mwtc_sidebar_wrapper {
     margin: 0 20px 0 0;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar {
     background-color: #fff;
     border-radius: 10px;
     min-height: 100px;
     padding: 30px 0;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section .mw_logo img {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section .mw_logo img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -84,16 +113,16 @@
     box-shadow: 0 7px 20px rgba(45, 205, 228, .3);
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section .mw_hello {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar .mw_logo_section .mw_hello {
     font-size: 16px;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li {
     margin: 5px 15px;
     border-radius: 10px;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li a {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li a {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -106,29 +135,29 @@
     color: #595959;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li a .menu-icon {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li a .menu-icon {
     width: 24px;
     height: 24px;
     background-position: center center;
     background-size: cover;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active {
     background-color: var(--chta-main-color);
     color: #fff;
     position: relative;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active a,
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li:hover a {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active a,
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li:hover a {
     color: #fff;
 }
 
-.mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper .sidebar ul li.active::after {
+.chatina.mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper .sidebar ul li.active::after {
     left: 10px;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active::after {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li.active::after {
     content: "";
     display: block;
     width: 5px;
@@ -142,48 +171,48 @@
     left: initial;
 }
 
-.mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper .sidebar ul li.active::after {
+.chatina.mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper .sidebar ul li.active::after {
     right: initial;
     left: 10px;
 }
 
-.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li:not(.active):hover a {
+.chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper .sidebar ul li:not(.active):hover a {
     background-color: var(--chta-main-color);
 }
 
 /* content */
-.mwtc_admin_settings_wrapper .content_wrapper {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper {
     flex: auto;
     width: 75%;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content {
     min-height: 100px;
     background-color: #fff;
     border-radius: 10px;
     padding-top: 20px;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content .option_section {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content .option_section {
     padding: 50px;
     border-radius: 5px;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content .option_section:nth-of-type(2n) {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content .option_section:nth-of-type(2n) {
     background-color: #F9F9F9;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content .option_section:not(:first-of-type) {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content .option_section:not(:first-of-type) {
     margin: 15px 0;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content .option_section .option_section_title {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content .option_section .option_section_title {
     margin: 0 30px 30px;
     font-size: 20px;
     position: relative;
 }
 
-.mwtc_admin_settings_wrapper .content_wrapper .content .option_section .option_section_title::before {
+.chatina.mwtc_admin_settings_wrapper .content_wrapper .content .option_section .option_section_title::before {
     content: "";
     display: block;
     width: 15px;
@@ -197,28 +226,28 @@
     transform: translateY(-50%);
 }
 
-.mwtc_admin_settings_wrapper.mwtc-rtl .content .option_section .option_section_title::before {
+.chatina.mwtc_admin_settings_wrapper.mwtc-rtl .content .option_section .option_section_title::before {
     right: -30px;
     left: initial;
 }
 
-.mwtc_admin_settings_wrapper.mwtc-ltr .content .option_section .option_section_title::before {
+.chatina.mwtc_admin_settings_wrapper.mwtc-ltr .content .option_section .option_section_title::before {
     left: -40px;
     right: initial;
 }
 
 @media (max-width: 575.98px) {
-    .mwtc_admin_settings_wrapper {
+    .chatina.mwtc_admin_settings_wrapper {
         flex-wrap: wrap;
     }
 
-    .mwtc_admin_settings_wrapper .content_wrapper,
-    .mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper {
+    .chatina.mwtc_admin_settings_wrapper .content_wrapper,
+    .chatina.mwtc_admin_settings_wrapper .mwtc_sidebar_wrapper {
         width: 100%;
     }
 
-    .mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper,
-    .mwtc_admin_settings_wrapper.mwtc-ltr .mwtc_sidebar_wrapper {
+    .chatina.mwtc_admin_settings_wrapper.mwtc-rtl .mwtc_sidebar_wrapper,
+    .chatina.mwtc_admin_settings_wrapper.mwtc-ltr .mwtc_sidebar_wrapper {
         margin: 0 0 20px 0;
     }
 }
