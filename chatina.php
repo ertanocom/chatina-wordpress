@@ -54,8 +54,8 @@ class Chatina
         add_action('wp_footer', function () {
             $api_key = sanitize_text_field(get_option('chatina_api_key'));
             if (!$api_key) return;
-            echo '<script id="chatinaw-script" data-bId="' . esc_html($api_key) . '">
-window.addEventListener("load",(function(){const t=document.getElementById("chatinaw-script").getAttribute("data-bId");window.chatina={bId:t};var e=document.createElement("div");e.id="chatina-root",document.body.appendChild(e);var n=document.createElement("link");n.rel="stylesheet",n.href="https://cdn.chatina.ai/static/widget.css",n.crossOrigin="anonymous",document.head.appendChild(n);var a=document.createElement("script");a.src="https://cdn.chatina.ai/static/widget.js",a.crossOrigin="anonymous",document.head.appendChild(a)}));
+            echo '<script>
+window.addEventListener("load",(function(){const t="' . esc_html($api_key) . '";window.chatina={bId:t};var e=document.createElement("div");e.id="chatina-root",document.body.appendChild(e);var n=document.createElement("link");n.rel="stylesheet",n.href="https://cdn.chatina.ai/static/widget.css",n.crossOrigin="anonymous",document.head.appendChild(n);var a=document.createElement("script");a.src="https://cdn.chatina.ai/static/widget.js",a.crossOrigin="anonymous",document.head.appendChild(a)}));
 </script>';
         });
     }
