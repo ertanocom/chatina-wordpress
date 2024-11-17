@@ -29,6 +29,27 @@ class Chatina
         add_action('admin_menu', [$this, 'add_admin_menu']);
         add_action('wp_enqueue_scripts', [$this, 'hooks']);
         add_action('admin_enqueue_scripts', [$this, 'admin_assets']);
+
+        // after activation redirect to settings page
+        register_activation_hook(__FILE__, function () {
+            add_option('chatina_redirect', true);
+        });
+
+        add_action('admin_init', function () {
+            if (get_option('chatina_redirect')) {
+                delete_option('chatina_redirect');
+                wp_redirect(admin_url('options-general.php?page=chatina'));
+                exit;
+            }
+        });
+
+        add_filter('plugin_action_links', [$this, 'filter_plugin_action_links']);
+    }
+
+    public function filter_plugin_action_links($links)
+    {
+        $links[] = '<a href="' . admin_url('options-general.php?page=chatina') . '">' . __('Settings', 'chatina') . '</a>';
+        return $links;
     }
 
     public function add_admin_menu()
