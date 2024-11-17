@@ -30,6 +30,28 @@ With Chatina AI, you can enhance customer satisfaction by providing fast, accura
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Configure your Chatina AI settings in the dashboard to start chatting live with visitors.
 
+== Loading CSS and JavaScript Remotely ==
+
+To ensure proper functioning of your Chatina chat widget, it is essential to load the required CSS and JavaScript files directly from Chatina’s CDN. Below are the URLs for the necessary assets:
+
+Required Assets
+
+JavaScript
+
+URL: https://cdn.chatina.ai/static/widget.js
+
+CSS
+
+URL: https://cdn.chatina.ai/static/widget.css
+
+By including these resources, your chat widget will have the most up-to-date code and styling, ensuring compatibility and optimal performance. Simply add the following <link> and <script> tags to your HTML:
+
+<link rel="stylesheet" href="https://cdn.chatina.ai/static/widget.css">
+
+<script src="https://cdn.chatina.ai/static/widget.js"></script>
+
+Embedding these assets will integrate the necessary functionality and styles seamlessly into your webpage.
+
 == Changelog ==
 
 = 1.0 =
