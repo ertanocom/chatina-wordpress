@@ -2,7 +2,7 @@
 Contributors: ertano, mihanwp, chatinaai
 Tags: live chat, chat, AI chat, customer support
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -10,15 +10,15 @@ Website: https://chatina.ai
 
 == Description ==
 
-**Chatina AI** brings advanced live chat functionality to your WordPress website, enhancing user engagement and support efficiency with an AI-powered chat solution. (Coming Soon...)
+Chatina AI brings advanced live chat functionality to your WordPress website, enhancing user engagement and support efficiency with an AI-powered chat solution. (Coming Soon...)
 
 == Key Features ==
 
-* **Real-Time Chat:** Connect instantly with website visitors to provide seamless support and boost engagement.
-* **AI-Powered Responses:** Leverage AI-driven responses to answer common queries and reduce response time. (Coming Soon...)
-* **Customizable Chat Widget:** Easily customize the chat widget to match your site’s design and brand identity.
-* **User-Friendly Dashboard:** Manage conversations, view analytics, and optimize your chat interactions through an intuitive dashboard.
-* **Integration with Chatina Platform:** Fully compatible with the Chatina AI platform, integrating seamlessly with additional features on [chatina.ai](https://chatina.ai).
+* Real-Time Chat: Connect instantly with website visitors to provide seamless support and boost engagement.
+* AI-Powered Responses: Leverage AI-driven responses to answer common queries and reduce response time. (Coming Soon...)
+* Customizable Chat Widget: Easily customize the chat widget to match your site’s design and brand identity.
+* User-Friendly Dashboard: Manage conversations, view analytics, and optimize your chat interactions through an intuitive dashboard.
+* Integration with Chatina Platform: Fully compatible with the Chatina AI platform, integrating seamlessly with additional features on [chatina.ai](https://chatina.ai).
 
 == Why Choose Chatina AI? ==
 
@@ -26,7 +26,7 @@ With Chatina AI, you can enhance customer satisfaction by providing fast, accura
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/chatina-ai` directory, or install the plugin directly through the WordPress plugin screen.
+1. Upload the plugin files to the /wp-content/plugins/chatina-ai directory, or install the plugin directly through the WordPress plugin screen.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Configure your Chatina AI settings in the dashboard to start chatting live with visitors.
 
