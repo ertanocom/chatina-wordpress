@@ -26,11 +26,13 @@ class Chatina
     {
         load_plugin_textdomain('chatina', false, dirname(plugin_basename(__FILE__)) . '/languages/');
 
+        add_action('wp_footer', [$this, 'add_chatina_root']);
+
         add_action('admin_menu', [$this, 'add_admin_menu']);
-        add_action('wp_enqueue_scripts', [$this, 'hooks']);
+        add_action('wp_enqueue_scripts', [$this, 'register_assets']);
         add_action('admin_enqueue_scripts', [$this, 'admin_assets']);
 
-        // after activation redirect to settings page
+        // redirect to settings page after activation
         register_activation_hook(__FILE__, function () {
             add_option('chatina_redirect', true);
         });
@@ -70,15 +72,18 @@ class Chatina
         }
     }
 
-    public function hooks()
+    public static function register_assets()
     {
-        add_action('wp_footer', function () {
-            $api_key = sanitize_text_field(get_option('chatina_api_key'));
-            if (!$api_key) return;
-            echo '<script>
-window.addEventListener("load",(function(){const t="' . esc_html($api_key) . '";window.chatina={bId:t};var e=document.createElement("div");e.id="chatina-root",document.body.appendChild(e);var n=document.createElement("link");n.rel="stylesheet",n.href="https://cdn.chatina.ai/static/widget.css",n.crossOrigin="anonymous",document.head.appendChild(n);var a=document.createElement("script");a.src="https://cdn.chatina.ai/static/widget.js",a.crossOrigin="anonymous",document.head.appendChild(a)}));
-</script>';
-        });
+        wp_enqueue_script('chatina', plugin_dir_url(__FILE__) . 'assets/js/widget.js', [], '1.0.0', ['in_footer' => true]);
+        wp_enqueue_style('chatina', plugin_dir_url(__FILE__) . 'assets/css/widget.css', [], '1.0.0');
+        wp_localize_script('chatina', 'chatina', [
+            'bId' => sanitize_text_field(get_option('chatina_api_key')),
+        ]);
+    }
+
+    public static function add_chatina_root()
+    {
+        echo '<div id="chatina-root"></div>';
     }
 }
 
