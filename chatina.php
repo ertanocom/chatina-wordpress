@@ -5,8 +5,8 @@
  * Plugin URI: https://chatina.ai/lab/wordpress/
  * Description: Add online chat to your website
  * Version: 1.0
- * Author: Chatina
- * Author URI: https://chatina.ai
+ * Author: Ertano
+ * Author URI: https://ertano.com
  * License: GPLv2 or later
  * Text Domain: chatina
  * Domain Path: /languages

@@ -1,5 +1,5 @@
 === Chatina Ai – Live Chat Online Platform ===
-Contributors: ertano, mihanwp, chatinaai
+Contributors: ertano, mihanwp
 Tags: live chat, chat, AI chat, customer support
 Requires at least: 5.0
 Tested up to: 6.7
