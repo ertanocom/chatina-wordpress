@@ -52,6 +52,28 @@ By including these resources, your chat widget will have the most up-to-date cod
 
 Embedding these assets will integrate the necessary functionality and styles seamlessly into your webpage.
 
+== Source Code ==
+
+To comply with WordPress.org guidelines, all source code related to this plugin is available in both the plugin directory and a public repository.
+
+Unminified JavaScript and CSS files can be found in the following locations:
+- Plugin Directory: /assets/js/widget.js and /assets/css/widget.css
+- GitHub Repository: [Chatina AI GitHub](https://github.com/your-repo/chatina-ai)
+
+For instructions on rebuilding the compressed files, please refer to the `BUILD.md` file in the GitHub repository or see the section below.
+
+== Build Instructions ==
+
+This plugin uses build tools (e.g., Webpack, npm) for compression. Follow these steps to recreate the production files:
+1. Clone the repository: git clone https://github.com/chatinaai/chatina-wordpress/chatina-wordpress.git
+2. Navigate to the project directory: cd chatina-wordpress
+3. Install dependencies: npm install
+4. Build the files: npm run build
+
+== Additional Notes ==
+
+Chatina uses React.js, a powerful and flexible open-source JavaScript library, to build and manage the dynamic components of the plugin. React.js is licensed under the MIT License, ensuring freedom for developers to use, modify, and distribute the library as needed.
+
 == Changelog ==
 
 = 1.0 =
