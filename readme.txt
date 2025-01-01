@@ -57,8 +57,8 @@ Embedding these assets will integrate the necessary functionality and styles sea
 To comply with WordPress.org guidelines, all source code related to this plugin is available in both the plugin directory and a public repository.
 
 Unminified JavaScript and CSS files can be found in the following locations:
-- Plugin Directory: /assets/js/widget.js and /assets/css/widget.css
-- GitHub Repository: [Chatina AI GitHub](https://github.com/your-repo/chatina-ai)
+- Plugin Directory: /assets/js/widget-normal.js and /assets/css/widget-normal.css
+- GitHub Repository: [Chatina AI GitHub](https://github.com/chatinaai/chatina-wordpress/)
 
 For instructions on rebuilding the compressed files, please refer to the `BUILD.md` file in the GitHub repository or see the section below.
 
