@@ -24,6 +24,40 @@ Chatina AI brings advanced live chat functionality to your WordPress website, en
 
 With Chatina AI, you can enhance customer satisfaction by providing fast, accurate, and efficient live chat support. Ideal for businesses, e-commerce sites, and service providers looking to improve customer interaction and support.
 
+== External Services ==
+
+This plugin connects to external APIs to provide live chat functionality and manage related services. The external services are detailed below:
+
+### Chatina AI API
+- **What it is used for:**  
+  The Chatina AI API powers the live chat functionalities, including initializing chats, fetching chat information, and interacting with businesses using Chatina's platform.
+
+- **Data sent and when:**  
+  - **API Endpoints:**  
+    - `https://api.chatina.ai/v1/chat`: Used to initialize and manage live chats. It sends chat-related metadata, such as chat ID and user tokens, when a chat is started.  
+    - `https://api.chatina.ai/v1/business/`: Sends the user's token and business identifiers to fetch details about businesses available for chat.  
+    - `https://api.chatina.ai/v1/c/`: Sends a chat token and chat metadata to validate and retrieve chat data.  
+    - `https://api.chatina.ai/v1/chat/information`: Sends the chat ID and chat token to retrieve detailed chat-related information.
+
+  - **Other Data Sent:**  
+    - **User Tokens:** Used to authenticate the user with the service.  
+    - **Chat Metadata:** Includes chat ID and session-related identifiers.
+
+- **Why:**  
+  The API is required to facilitate the core functionalities of the plugin, including establishing communication between users and businesses.
+
+- **Service Provider:**  
+  Chatina AI  
+  - [Terms of Service](https://chatina.ai/terms)  
+  - [Privacy Policy](https://chatina.ai/privacy)  
+
+### Chatina AI CDN
+- **What it is used for:**  
+  The Chatina AI CDN (`https://cdn.chatina.ai/static/`) is used to serve assets and resources required for the plugin's operation, such as JavaScript files and static content.
+
+- **Data sent and when:**  
+  No personal or user data is sent to the CDN. It is accessed to fetch static resources required for plugin functionality.
+
 == Installation ==
 
 1. Upload the plugin files to the /wp-content/plugins/chatina-ai directory, or install the plugin directly through the WordPress plugin screen.
