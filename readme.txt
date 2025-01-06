@@ -8,6 +8,8 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Website: https://chatina.ai
 
+A seamless live chat solution powered by AI to enhance user engagement and customer support on your WordPress website.
+
 == Description ==
 
 Chatina AI brings advanced live chat functionality to your WordPress website, enhancing user engagement and support efficiency with an AI-powered chat solution. (Coming Soon...)
