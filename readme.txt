@@ -2,8 +2,8 @@
 Contributors: ertano, mihanwp
 Tags: live chat, chat, AI chat, customer support
 Requires at least: 5.0
-Tested up to: 6.7
-Stable tag: 1.0
+Tested up to: 6.7.1
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Website: https://chatina.ai
@@ -111,6 +111,9 @@ This plugin uses build tools (e.g., Webpack, npm) for compression. Follow these 
 Chatina uses React.js, a powerful and flexible open-source JavaScript library, to build and manage the dynamic components of the plugin. React.js is licensed under the MIT License, ensuring freedom for developers to use, modify, and distribute the library as needed.
 
 == Changelog ==
+
+= 1.3.1 =
+* Improvments and security tested.
 
 = 1.0 =
 * Initial release with core live chat functionality.

@@ -4,7 +4,7 @@
  * Plugin Name: Chatina Ai – Live Chat Online Platform
  * Plugin URI: https://chatina.ai/lab/wordpress/
  * Description: Add online chat to your website
- * Version: 1.0
+ * Version: 1.3.1
  * Author: Ertano
  * Author URI: https://ertano.com
  * License: GPLv2 or later
